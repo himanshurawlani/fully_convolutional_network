@@ -51,6 +51,11 @@ def find_type(image):
     
 
 if __name__=="__main__":
+    """
+    Docker command to start tensorflow serving server:
+    (NOTE: Run the below command inside "./flower_classifier" directory)
+    $ docker run --rm -t -p 8501:8501 -v "$(pwd):/models/flower_classifier" -e MODEL_NAME=flower_classifier --name flower_classifier tensorflow/serving
+    """
 
     image_group = []
     image_group.append(cv2.imread("sunflower.jpg")[:,:,::-1])

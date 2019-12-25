@@ -9,6 +9,6 @@ def export(input_h5_file, export_path):
 
 if __name__ == "__main__":
 
-    input_h5_file = './snapshots/model_epoch_28_loss_0.99_acc_0.61_val_loss_0.98_val_acc_0.62.h5'
+    input_h5_file = './snapshots/model_epoch_48_loss_0.74_acc_0.71_val_loss_0.77_val_acc_0.70.h5'
     export_path = './flower_classifier/1'
     export(input_h5_file, export_path)
