@@ -12,7 +12,7 @@ def download_dataset():
 
     return BASE_PATH
 
-def split_dataset(BASE_PATH = 'flower_photos', DATASET_PATH = 'dataset'):
+def split_dataset(BASE_PATH = 'flower_photos', DATASET_PATH = 'dataset', train_images = 300, val_images = 50):
     # Specify path to the downloaded folder
     classes = os.listdir(BASE_PATH)
 
@@ -25,11 +25,7 @@ def split_dataset(BASE_PATH = 'flower_photos', DATASET_PATH = 'dataset'):
 
     # Creating val directory
     val_dir = os.path.join(DATASET_PATH, 'val')
-    os.makedirs(val_dir, exist_ok=True)
-
-    # Number of images required in train and val sets
-    train_images = 300
-    val_images = 50
+    os.makedirs(val_dir, exist_ok=True)    
 
     # Copying images from original folder to dataset folder
     for class_name in classes:
@@ -135,5 +131,8 @@ def get_dataset_stats(DATASET_PATH = 'dataset'):
 if __name__ == "__main__":
     
     BASE_PATH = download_dataset()
-    split_dataset(BASE_PATH=BASE_PATH)
+    # Number of images required in train and val sets
+    train_images = 300
+    val_images = 50
+    split_dataset(BASE_PATH=BASE_PATH, train_images = 300, val_images = 50)
     get_dataset_stats()
