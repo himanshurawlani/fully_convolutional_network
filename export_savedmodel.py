@@ -8,7 +8,7 @@ def export(input_h5_file, export_path):
     print(f"SavedModel created at {export_path}")
 
 if __name__ == "__main__":
-    
-    input_h5_file = './model_epoch_28_loss_0.99_acc_0.61_val_loss_0.98_val_acc_0.62.h5'
+
+    input_h5_file = './snapshots/model_epoch_28_loss_0.99_acc_0.61_val_loss_0.98_val_acc_0.62.h5'
     export_path = './flower_classifier/1'
     export(input_h5_file, export_path)
