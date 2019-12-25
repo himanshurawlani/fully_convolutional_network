@@ -7,7 +7,7 @@ def download_dataset():
     
     BASE_PATH = tf.keras.utils.get_file('flower_photos',
                             'http://download.tensorflow.org/example_images/flower_photos.tgz',
-                            extract=True)
+                            extract=True, cache_dir='.')
     print(f"Downloaded and extracted at {BASE_PATH}")
 
     return BASE_PATH
