@@ -59,3 +59,4 @@ def FCN_model(len_classes=5, dropout_rate=0.2):
 
 if __name__ == "__main__":
     FCN_model()
+    

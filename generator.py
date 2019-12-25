@@ -123,7 +123,6 @@ class Generator(tf.keras.utils.Sequence):
 if __name__ == "__main__":
 
     BASE_PATH = 'dataset'
-    # len_classes, train_dir, val_dir, IMG_HEIGHT, IMG_WIDTH, total_train, total_val = get_dataset_stats(BASE_PATH)
     train_generator = Generator('dataset/train')
     val_generator = Generator('dataset/val')
     print(len(train_generator))
@@ -131,3 +130,4 @@ if __name__ == "__main__":
     image_batch, label_group = train_generator.__getitem__(0)
     print(image_batch.shape)
     print(label_group.shape)
+    
