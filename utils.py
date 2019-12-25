@@ -33,6 +33,8 @@ def split_dataset(BASE_PATH = 'flower_photos', DATASET_PATH = 'dataset'):
 
     # Copying images from original folder to dataset folder
     for class_name in classes:
+        if len(class_name.split('.')) >= 2:
+            continue
         print(f"Copying images for {class_name}...")
         
         # Creating destination folder (train and val)
