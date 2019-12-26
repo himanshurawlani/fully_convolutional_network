@@ -132,7 +132,7 @@ if __name__ == "__main__":
     
     BASE_PATH = download_dataset()
     # Number of images required in train and val sets
-    train_images = 300
-    val_images = 50
-    split_dataset(BASE_PATH=BASE_PATH, train_images = 300, val_images = 50)
+    train_images = 500
+    val_images = 100
+    split_dataset(BASE_PATH=BASE_PATH, train_images = train_images, val_images = val_images)
     get_dataset_stats()

@@ -1,5 +1,4 @@
 import tensorflow as tf
-from utils import split_dataset, get_dataset_stats
 from model import FCN_model
 from generator import Generator
 import os

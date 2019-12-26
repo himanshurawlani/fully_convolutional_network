@@ -58,7 +58,7 @@ if __name__=="__main__":
     """
 
     image_group = []
-    image_group.append(cv2.imread("sunflower.jpg")[:,:,::-1])
-    image_group.append(cv2.imread("dandelion.jpg")[:,:,::-1])
+    image_group.append(cv2.imread("test_images/sunflower.jpg")[:,:,::-1])
+    image_group.append(cv2.imread("test_images/dandelion.jpg")[:,:,::-1])
     predictions = find_type(image_group)
     print(predictions)
