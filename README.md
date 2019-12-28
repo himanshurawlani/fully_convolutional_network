@@ -11,3 +11,5 @@ Please refer the blogpost here for a detailed explanation of the project. It cov
 3. Creating a generator in Keras to load and process a batch of data in memory
 4. Training the network with variable batch dimensions
 5. Deploying the model using TensorFlow Serving
+
+I'd love to have your suggestions and improvements to the repository, feel free to raise a GitHub issue for the same.
