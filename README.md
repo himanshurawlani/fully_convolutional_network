@@ -5,7 +5,7 @@ The code in this repository is developed and tested on Ubuntu 18.04.3 LTS with P
 * Scikit learn (sklearn==0.21.3)
 * Numpy (numpy==1.16.2)
 
-Please refer the blogpost here for a detailed explanation of the project. It covers the following topics:
+Please refer the blogpost [here](https://medium.com/p/implementing-a-fully-convolutional-network-fcn-in-tensorflow-2-3c46fb61de3b?source=email-52b8b739a77b--writer.postDistributed&sk=0177ba911d9d4784baaff414b29dc51f) for a detailed explanation of the project. It covers the following topics:
 1. Building a fully convolutional network (FCN) in TensorFlow using Keras
 2. Downloading and splitting a sample dataset
 3. Creating a generator in Keras to load and process a batch of data in memory
